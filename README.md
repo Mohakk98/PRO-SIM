@@ -17,18 +17,35 @@ PRO-SIM is an educational petroleum-engineering simulation project developed in 
 - Surface pipeline pressure-profile simulation
 - Numerical solution of the well operating point
 - Interactive GUI using CustomTkinter and Matplotlib
+## Nodal Analysis Demo
+
+The simulator calculates the well operating point from the intersection of the IPR and VLP curves.
+
+![PRO-SIM Nodal Analysis](assets/nodal-analysis.png)
+
+Example case:
+- Reservoir Pressure: 4000 psi
+- Productivity Index: 1.5 stb/d/psi
+- Bubble Point Pressure: 2500 psi
+- Water Cut: 10%
+- ESP Frequency: 50 Hz
+- Operating Point: 2438 stb/d
+- Bottomhole Pressure: 2371 psi
 
 ### Project structure
 
 ```text
-PRO-SIM_v5_2/
+PRO-SIM/
 ├── main.py
 ├── physics.py
 ├── solver.py
 ├── gui_tabs.py
 ├── reports.py
 ├── requirements.txt
-└── README.md
+├── README.md
+├── TECHNICAL_NOTES.md
+└── assets/
+    └── nodal-analysis.png
 ```
 
 ### How it works
